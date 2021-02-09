@@ -4,59 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
+    <title>Tentang Pemilik</title>
     <style>
-        body {
+        .navigasi {
+            position: sticky;
+            top: 0px;
+            height: 80px;
+            background: rgb(109, 191, 103);
+            color: white;
+            font-family: 'Titillium Web', sans-serif;
+            box-shadow: rgb(0,0,0) 0px 2px 6px;
+        }
+        .navlogo {
+            padding: 10px 30px;
+            float: left;
+            cursor: pointer;
+        }
+        .navlist li{
+            float: left;
+            list-style: none;
+            padding: 28px 15px;
+            cursor: pointer;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 20px;
+            appearance: auto;
+        }
+        .navlist li:hover {
+            background: rgb(87, 162, 81);
+        }
+        .content {
             font-family: Georgia, 'Times New Roman', Times, serif;
             width: 1000px;
             margin: auto;
+            background-color: rgba(231, 212, 177, 0.692); 
+            padding: 30px;           
         }
         .foto {
             float: left;
             padding: 20px 30px;
-            border: 1px solid #fff;
-            border-radius: 100%;
         }
         .header {
-            background-color: black;
+            background-color: rgb(46, 39, 2);
             height: 80px;
+            color: azure;
+            padding: 20px 300px;
+            box-shadow: rgb(0,0,0) 0px 2px 6px;
         }
 
         .title {
             text-align: center;
             font-size: 15px;
         }
-
-        .footer {
-            background-color: black;
-            height: 50px;
-        }
-        li {
+        .content li {
             font-size: 19px;
+        }
+        .elemen {
+            text-align: justify;
+        }
+        .footer {
+            color: azure;
+            background-color: rgb(46, 39, 2);
+            height: 50px;
+            padding: 1px 430px;
+            box-shadow: rgb(0,0,0) 0px 2px 6px;
         }
     </style>
 </head>
 
 <body>
-    <div class="header"></div>
-    <div class="foto"><img src="fitra1.png" alt="Foto" width="150px"></div>
+    <nav class="navigasi">
+        <div class="navlogo">
+            <a href="index.html"><img src="logo.jpg" alt="Kopi Omnuge" height="60px"></a>
+        </div>
+        <div class="navlist">
+            <ul>
+                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="menu.html">Daftar Menu</a></li>
+                <li><a href="cv.html">Tentang Pemilik</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+    <div class="header">
+        <h1>CURRICULUM VITAE</h1>
+    </div>
+    <div class="foto"><img src="fotobulat.png" alt="Foto" width="200px"></div>
     <div class="title">
         <h1>Fitra Anugrah</h1>
         <h2>Pluit Sea View Apartment, Penjaringan, North Jakarta 14440</h2>
-        <h2>0813 6417 6656</h2>
         <h2><a href="https://www.linkedin.com/in/anugrahfitra/">https://www.linkedin.com/in/anugrahfitra/</a></h2>
         <h2><a href="math.fitra@gmail.com">math.fitra@gmail.com</a></h2>
-    </div> <br><br><br>
-
+        <h2>0813 6417 6656</h2>
+    </div> <br><br>
+<div class="elemen">
     <div class="education">
         <h2>EDUCATION</h2><hr size="3px", color="black">
         <h3>GRADUATE PROGRAM, UNIVERSITY OF RIAU</h3>
         <h3>Master of Science in Mathematics, Operations Research Concentration</h3>
         <ul>
-            <li>Publication of Scientific Papers "Preemptive Goal Programming for Nutrition ManagementOptimization" in
+            <li>Publication of Scientific Papers "Preemptive Goal Programming for Nutrition Management Optimization" in
                 International Journal of Theoretical and Applied Mathematics.</li>
-            <li>Developed a feeding model for adolescents that meet daily nutritional needs with minimal costas a Thesis
-                project. This model is designed with "Goal Programming" and uses the 'LINGO'program for computing.</li>
+            <li>Developed a feeding model for adolescents that meet daily nutritional needs with minimal cost as a Thesis
+                project. This model is designed with "Goal Programming" and uses the 'LINGO' program for computing.</li>
         </ul>
     </div><br>
 
@@ -96,19 +146,17 @@
     <div class="skills">
         <h2>TECHNICAL SKILLS</h2><hr size="3px", color="black">
         <ul>
-            <li>Programming Language (
-                Python
-                (NumPy, Pandas, Matplotlib, Seaborn, Regex, Scikit-Learn, TensorFlow,Keras, BeautifulSoup), Apache Spark
-                and C++)</li>
+            <li>Programming Language (Python (NumPy, Pandas, Matplotlib, Seaborn, Regex, 
+                Scikit-Learn, Tensor Flow, Keras, Beautiful Soup), Apache Spark and C++)</li>
             <li>Database Management System
                 (Microsoft SQL Server Management Studio, SQLite)</li>
             <li>Other Programs
-                (LaTex, HTML, LINGO, Linux, Git & Github, Watson Studio, Ms. Office)</li>
+                (LaTex, LINGO, Linux, Git & Github, Watson Studio, Ms. Office)</li>
             <li>Data Collection
                 (Web Scraping, API)</li>
             <li>Data Exploration & Preparation
                 (Data Cleaning, Imputation, Normalization, Standardization,
-                ExploratoryData Analysis, Descriptive Analysis & Predictive Analytics)</li>
+                Exploratory Data Analysis, Descriptive Analysis & Predictive Analytics)</li>
             <li>Data Visualization
                 (Matplotlib, Tableau, Google Data Studio, Ms. Excel (Advanced function, Pivot & Solver))</li>
             <li>Data Mining
@@ -117,7 +165,11 @@
                 using a complex dataset</li>
         </ul>
     </div>
-    <div class="footer"></div>
+</div>    
+    <div class="footer">
+        <h6>K o p i  O m n u g e ™</h6>
+    </div>
+</div>
 </body>
 
 </html>
