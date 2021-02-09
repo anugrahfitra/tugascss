@@ -10,7 +10,7 @@
             position: sticky;
             top: 0px;
             height: 80px;
-            background: rgb(109, 191, 103);
+            background: rgb(214, 210, 202);
             color: white;
             font-family: 'Titillium Web', sans-serif;
             box-shadow: rgb(0,0,0) 0px 2px 6px;
@@ -31,43 +31,39 @@
             appearance: auto;
         }
         .navlist li:hover {
-            background: rgb(87, 162, 81);
-        }
-        .content {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            width: 1000px;
-            margin: auto;
-            background-color: rgba(231, 212, 177, 0.692); 
-            padding: 30px;           
-        }
-        .foto {
-            float: left;
-            padding: 20px 30px;
+            background: rgba(49, 35, 10, 0.692);
         }
         .header {
-            background-color: rgb(46, 39, 2);
-            height: 80px;
-            color: azure;
-            padding: 20px 300px;
-            box-shadow: rgb(0,0,0) 0px 2px 6px;
-        }
-
-        .title {
+            background-color: rgba(49, 35, 10, 0.692);
+            box-shadow: black 0px 1px 6px;
+            width: 1000px;
+            height: 100px;
             text-align: center;
-            font-size: 15px;
+            padding: 3px;
+
         }
-        .content li {
-            font-size: 19px;
+        .menu {
+            margin: 0px;
+            width: 500px;
+            float: left;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
         }
-        .elemen {
-            text-align: justify;
+        legend {
+            font-size: 40px;
         }
-        .footer {
-            color: azure;
-            background-color: rgb(46, 39, 2);
-            height: 50px;
-            padding: 1px 430px;
-            box-shadow: rgb(0,0,0) 0px 2px 6px;
+        .content {
+            width: 500px;
+            background-color: rgba(214, 210, 202, 0.692);
+            box-shadow: black 0px 2px 6px;
+            float: left;
+            margin: auto;
+        }
+        img {
+            box-shadow: black 0px 2px 6px;
+        }
+        .all {
+            margin-left: 500px;
         }
     </style>
 </head>
@@ -79,13 +75,83 @@
         </div>
         <div class="navlist">
             <ul>
-                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="index.html">Portofolio</a></li>
                 <li><a href="menu.html">Daftar Menu</a></li>
                 <li><a href="cv.html">Tentang Pemilik</a></li>
             </ul>
         </div>
-    </nav>
-    
+    </nav><br><br><br>
+<div class="all">
+    <div class="header">
+        <h1>DAFTAR MENU</h1>
+    </div>
+
+<div class="content">
+    <div class="menu">
+        <div class="kopi">
+            <fieldset>
+                <legend>KOPI</legend>
+                <ul>
+                    <li>Kopi O</li>
+                    <li>Kopi Obeng</li>
+                    <li>Kopi Susu Gula Aren</li>
+                    <li>Cappuccino</li>
+                    <li>Mocaccino</li>
+                </ul>
+            </fieldset>
+        </div>
+
+        <div class=teh>
+            <fieldset>
+                <legend>TEH</legend>
+                <ul>
+                    <li>Thai Tea</li>
+                    <li>Thai Green Tea</li>
+                    <li>Lemon Tea</li>
+                </ul>
+            </fieldset>
+        </div>
+
+        <div class="milkshake">
+            <fieldset>
+                <legend>MILK SHAKE</legend>
+                <ul>
+                    <li>Taro</li>
+                    <li>Red Velvet</li>
+                    <li>Chocolate</li>
+                    <li>Strawberry Milk</li>
+                    <li>Bubble Gum</li>
+                </ul>
+            </fieldset>
+        </div>
+
+        <div class="soda">
+            <fieldset>
+                <legend>SODA</legend>
+                <ul>
+                    <li>Mango Soda</li>
+                    <li>Guava Soda</li>
+                    <li>Mango Yakult Soda</li>
+                    <li>Guava Yakult Soda</li>    
+                </ul>
+            </fieldset>
+        </div>
+
+        <div class="topping">
+            <fieldset>
+                <legend>TOPPING</legend>
+                <ul>
+                    <li>Cheese Cream</li>
+                    <li>Boba</li>    
+                </ul>
+            </fieldset>
+        </div>
+    </div>
+</div>
+    <div>
+        <img src="menu.jpg" alt="menu" width="506px" height="966px">
+    </div>
+</div>
 </body>
 
 </html>
